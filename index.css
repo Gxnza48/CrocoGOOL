@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.glassmorphism {
+  background: rgba(0, 51, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid #004d00;
+}
+
+.navbar-blur {
+  background: rgba(0, 51, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #004d00;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006600;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove horizontal scrollbar */
+body {
+  overflow-x: hidden;
+}
+
+/* Retro Football Elements */
+.retro-border {
+  border: 2px solid #004d00;
+  box-shadow: 0 0 10px rgba(0, 77, 0, 0.5);
+}
+
+.retro-text {
+  text-shadow: 2px 2px 4px rgba(0, 77, 0, 0.5);
+}
+
+.gradient-button {
+  background: linear-gradient(45deg, #004d00, #006600);
+  transition: all 0.3s ease;
+}
+
+.gradient-button:hover {
+  background: linear-gradient(45deg, #006600, #008000);
+}
+
+/* Password Strength Meter */
+.password-strength-meter {
+  height: 5px;
+  background-color: #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.password-strength-meter > div {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.strength-weak { background-color: #ff4d4d; }
+.strength-fair { background-color: #ffa64d; }
+.strength-good { background-color: #99cc00; }
+.strength-strong { background-color: #22cc22; }
